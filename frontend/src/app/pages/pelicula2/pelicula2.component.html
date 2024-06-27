@@ -1,0 +1,10 @@
+<div class="pelicula-container" *ngIf="pelicula">
+  <h2>{{ pelicula.titulo }}</h2>
+  <img [src]="pelicula.imagen" [alt]="pelicula.titulo" class="pelicula-imagen">
+  <p class="pelicula-info"><strong>Director:</strong> {{ pelicula.director }}</p>
+  <p class="pelicula-info"><strong>Descripción:</strong> {{ pelicula.descripcion }}</p>
+  <p class="pelicula-info"><strong>ID:</strong> {{ pelicula.id }}</p>
+</div>
+<div class="loading" *ngIf="!pelicula">
+  <p>Cargando datos de la película...</p>
+</div>

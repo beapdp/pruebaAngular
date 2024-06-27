@@ -1,0 +1,43 @@
+.pelicula-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: #1a1a1a;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .pelicula-imagen {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+  
+  .pelicula-info {
+    margin-bottom: 0.5rem;
+  }
+  
+  .pelicula-info strong {
+    color: #1a1a1a;
+    font-weight: bold;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+
+  

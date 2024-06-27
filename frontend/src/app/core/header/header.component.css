@@ -1,0 +1,33 @@
+.site-header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .site-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .main-nav {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+  }
+  
+  :host ::ng-deep .p-menubar {
+    background-color: transparent;
+    border: none;
+  }
+  
+  :host ::ng-deep .p-menubar .p-menuitem-link {
+    color: #ffffff;
+  }
+  
+  :host ::ng-deep .p-menubar .p-menuitem-link:hover {
+    background-color: #333;
+  }
+  
