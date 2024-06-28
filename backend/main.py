@@ -2,10 +2,7 @@ from fastapi import FastAPI, HTTPException
 from models import Pelicula
 from fastapi.middleware.cors import CORSMiddleware
 
-
 app = FastAPI()
-
-#http://127.0.0.1:8000
 
 app.add_middleware(
     CORSMiddleware,
@@ -15,7 +12,30 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-peliculas = []
+# Datos predefinidos de películas
+peliculas = [
+    Pelicula(
+        id=1,
+        titulo="El Caballero Oscuro",
+        descripcion="Batman lucha contra el Joker.",
+        director="Christopher Nolan",
+        imagen="https://pics.filmaffinity.com/the_dark_knight-102763119-large.jpg"
+    ),
+    Pelicula(
+        id=2,
+        titulo="Gran Torino",
+        descripcion="Un veterano de guerra entabla una amistad con su joven vecino.",
+        director="Clint Eastwood",
+        imagen="https://pics.filmaffinity.com/gran_torino-278262332-large.jpg"
+    ),
+    Pelicula(
+        id=3,
+        titulo="Malditos Bastardos",
+        descripcion="Un grupo de soldados judíos planea asesinar a líderes nazis.",
+        director="Quentin Tarantino",
+        imagen="https://pics.filmaffinity.com/inglourious_basterds-976286054-large.jpg"
+    )
+]
 
 @app.get("/")
 def index():
